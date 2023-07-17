@@ -1,0 +1,95 @@
+## MDSC - 202(P)
+
+## Final Lab Test
+
+**Author: Akula Venkata Satya Sai Gopinadh**
+
+**Regd NO: 22228**
+
+## **DATASET: 3.csv**
+
+```{r}
+print(getwd())
+```
+
+```{r}
+setwd("C:/Users/Msc 1/Desktop/MDSC-202")
+print(getwd())
+```
+
+```{r}
+data <- read.csv("3.csv")
+print(data)
+```
+
+```{r}
+print(ncol(data))
+```
+
+```{r}
+print(nrow(data))
+```
+
+### QQ plot is used for checking the outliers.
+
+```{r}
+# For Column name CITCRP
+qqnorm(data$CITCRP)
+qqline(data$CITCRP)
+```
+
+### For the above column we can see that the outliers are very less. We can see only two outliers are there in the above  QQ plot for the first column.
+
+```{r}
+# For Column name CONED - column 2
+qqnorm(data$CONED)
+qqline(data$CONED)
+```
+
+### For the above column we can see that the outliers are little more. We outliers are there in the above  QQ plot for the second column.
+
+```{r}
+# For Column name CONTIL - column 3
+qqnorm(data$CONTIL)
+qqline(data$CONTIL)
+
+```
+
+### For the above column we can see that the outliers are little more. We outliers are there in the above  QQ plot for the third column.
+
+```{r}
+# For Column name DATGEN - column 4
+qqnorm(data$DATGEN)
+qqline(data$DATGEN)
+```
+
+### For the above column we can see that the outliers are little more. We outliers are there in the above  QQ plot for the fourth column.
+
+```{r}
+# For Column name DELTA - column 5
+qqnorm(data$DELTA)
+qqline(data$DELTA)
+```
+
+### For the above column we can see that the outliers are little more. We outliers are there in the above  QQ plot for the fifth column.
+
+```{r}
+# For Column name RKFREE - column 6
+qqnorm(data$RKFREE)
+qqline(data$RKFREE)
+
+```
+
+### For the above column we can see that the outliers are little less compared with other columns. We outliers are there in the above  QQ plot for the second column.
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
